@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    background: #f2f2f2;
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper {
+    background: rgb(211, 209, 209);
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 4px 30px rgb(131, 131, 131);
+    color: black;
+    flex-basis: 400px;
+    height: 350px;
+    padding: 20px 35px;
+}
+
+.screen {
+    background: whitesmoke;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 4px 30px rgb(131, 131, 131);
+    border: 1px solid rgb(235, 232, 232);
+    font-size: 35px;
+    overflow: auto;
+    padding: 10px;
+    text-align: right;
+    width: 325px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button {
+    background: whitesmoke;
+    box-shadow: 0 4px 30px rgb(131, 131, 131);
+    border: 1px solid rgb(235, 232, 232);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: black;
+    font-size: 24px;
+    font-family: inherit;
+    height: 34px;
+    flex-basis: 20%;
+}
+
+.calc-button:last-child {
+    background: #232323;
+    box-shadow: 0 4px 30px rgb(131, 131, 131);
+    border: 1px solid rgb(235, 232, 232);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: whitesmoke;
+}
+
+.calc-button:last-child:hover {
+    background: inherit;
+    color: inherit;
+}
+
+.calc-button:hover {
+    background: inherit;
+}
+
+.calc-button:active {
+    background: #232323;
+}
+
+.double {
+    flex-basis: 47%;
+}
+
+.triple {
+    flex-basis: 74%;
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(211, 209, 209);
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: rgb(235, 232, 232);
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode #dark-mode-toggle {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.judul {
+    position: absolute;
+    margin-bottom: 25.5rem;
+}
+
+.text {
+    position: absolute;
+    margin-top: 27rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
